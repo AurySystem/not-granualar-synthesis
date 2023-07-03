@@ -1,0 +1,39 @@
+body {
+    background-color: #30363d;
+    color: lightyellow;
+}
+    select {
+        color: #f3e2ca;
+        background-color: #576188;
+        border: none;
+        border-radius: 0.8em;
+        padding: 0.1em 0.1em 0.1em 0.1em;
+        margin-left: 0.1em;
+        margin-right: 0.2em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+    input {
+        color: #f3e2ca;
+        background-color: #576188;
+        border: none;
+        border-radius: 0.8em;
+        padding: 0.1em 0.1em 0.1em 0.1em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+
+#Make {
+    color: #f3e2ca;
+    background-color: #576188;
+    border-radius: 0.8em;
+    border-style: none;
+    padding: 0.15em 0.5em 0.1em 0.5em;
+}
+    #Make:active {
+        color: #f3e2ca;
+        background-color: #474d63;
+        border-radius: 0.8em;
+        border-style: none;
+        padding: 0.15em 0.5em 0.1em 0.5em;
+    }
