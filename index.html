@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>audio</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body id="main">
+    <h1 class="">web granular synth</h1>
+
+        <label class="aa" for="arb">Load audio</label>
+        <input class="aa" type="file" id="arb" oninput = "loadarbitary(event);">
+        <button id="play" disabled>play audio?</button>
+        <button id="play2" disabled>play audio?</button>
+        <div>
+            <div>
+                <label for="volume">Volume</label>
+                <input type="range" id="volume" name="volume"
+                    min="0" max="150" value="90"/>
+                <input type="number" id="volumeBox" min="0" max="150" value="90" />
+            </div>
+            <div>
+                <label for="GranuleSize">Granule Size</label>
+                <input type="range" id="GranuleSize" name="GranuleSize"
+                    min="5" max="500" value="100" oninput="document.getElementById('GranuleSizeBox').value = this.value"/>
+                <input type="number" id="GranuleSizeBox" min="5" max="500" value="100" oninput="document.getElementById('GranuleSize').value = this.value" />
+            </div>
+            <div>
+                <label for="overlap">overlap</label>
+                <input type="range" id="overlap" name="overlap"
+                    min="0" max="99" value="0" oninput="document.getElementById('overlapBox').value = this.value"/>
+                <input type="number" id="overlapBox" min="0" max="99" value="0" oninput="document.getElementById('overlap').value = this.value" />
+            </div>
+            <div>
+                <label for="speed">grain speed</label>
+                <input type="range" id="speed" name="speed"
+                    min="0.1" max="401" value="100" oninput="document.getElementById('speedBox').value = this.value" />
+                <input type="number" id="speedBox" min="0.1" max="401" value="100" oninput="document.getElementById('speed').value = this.value" />
+            </div>
+            <div>
+                <label for="random">random</label>
+                <input type="checkbox" id="random" name="random"/>
+            </div>
+            <div>
+                <button id="regen" disabled>Regenerate buffer</button>
+            </div>
+        </div>
+        <div style="overflow:auto; white-space: nowrap;">
+            <canvas id="canvas1"></canvas><canvas id="canvas2"></canvas> <br>
+            <span id= "images"><span id= "imagesinner"><span><span>
+        </div>
+    <script src="audio.js"></script>
+</body>
+</html>
